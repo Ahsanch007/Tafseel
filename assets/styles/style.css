@@ -8,7 +8,7 @@ body {
     background-image: url('../images/03\ 1.png');
     background-repeat: no-repeat;
     height: 800px;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,9 +129,10 @@ body {
 }
 
 
-nav{
+nav {
     padding: 0px 20px;
 }
+
 .menu {
     display: none;
     --s: 30px;
@@ -379,10 +380,12 @@ li.splide__slide {
     color: #737373;
 
 }
-.card-btn{
+
+.card-btn {
     display: flex;
     justify-content: center;
 }
+
 .card-btn button {
     border: 1px solid #DAC1AB;
     font-size: 16px;
@@ -398,64 +401,197 @@ li.splide__slide {
 /* journey section css */
 
 
-.journey-section{
+.journey-section {
     background: #F5F0EA;
     padding: 80px 0px;
 
 }
-.design-journey{
+
+.design-journey {
     max-width: 480px;
     width: 100%;
     margin: auto;
     padding: 20px 0px;
 }
 
-.design-journey h3{
-font-size: 36px;
-font-weight: 400;
-line-height: 58px;
-letter-spacing: 0em;
-color: #434343;
+.design-journey h3 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0em;
+    color: #434343;
 }
-.design-journey p{
+
+.design-journey p {
     font-family: 'Lato', sans-serif;
 
-font-size: 18px;
-font-weight: 400;
-line-height: 26px;
-letter-spacing: 0.8999999761581421px;
-color: black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.8999999761581421px;
+    color: black;
 }
-.design-journey button{
 
-border-radius: 10px;
-border: 1px solid #DAC1AB;
+.design-journey button {
+
+    border-radius: 10px;
+    border: 1px solid #DAC1AB;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    padding: 10px;
+    width: 174px;
+
+}
+
+.img-row img {
+    max-width: 157px;
+    width: 100%;
+}
+
+/* footer section css */
+
+.footer-section {
+    background: #fff;
+    padding: 80px 0px;
+}
+
+
+.footer-info {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-inf {
+    max-width: 419px;
+    width: 100%;
+}
+
+.interior-design {
+    font-family: 'Lato', sans-serif;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color:
+        #212529;
+}
+
+.office {
+    font-family: 'Lato', sans-serif;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.800000011920929px;
+    color:
+        #212529;
+    margin: 0px;
+
+}
+
+.loca {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.800000011920929px;
+    color:
+        #212529;
+    margin: 0px;
+
+}
+
+.email p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.800000011920929px;
+    margin: 0px;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    color:
+        #212529;
+}
+
+.rights p {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.800000011920929px;
+    color:
+        #212529;
+    margin: 0px;
+
+}
+
+.social-follow ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.social-follow ul li {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.800000011920929px;
+    color:
+        #212529;
+    cursor: pointer;
+}
+
+.get-in-touch {
+    display: flex;
+
+}
+
+.touch-decr {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.800000011920929px;
+    color: #212529;
+    max-width: 304px;
+
+}
+.footer-btn button{
+    max-width: 204px;
+    width: 100%;
+    border: 1px solid #DAC1AB;
+    border-radius: 10px;
 font-size: 16px;
 font-weight: 400;
 line-height: 16px;
 letter-spacing: 0em;
-padding: 10px;
-width: 174px;
+text-align: center;
+padding: 10px 20px;
 
 }
-.img-row img{
-    max-width: 157px;
-    width: 100%;
-}
+
 /* media query  */
 @media (max-width: 776px) {
     .left-box {
         display: none;
 
     }
-    nav{
+
+    nav {
         padding: 0px;
     }
+
     .right-box {
         display: none;
 
     }
-    .card-row{
+
+    .card-row {
         gap: 10px;
         justify-content: center !important;
     }
@@ -480,7 +616,16 @@ width: 174px;
         text-align: center;
 
     }
-
+.interior-design{
+    text-align: center;
+}
+.footer-mob{
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.touch-decr{
+    text-align: center;
+}
     .desc p {
         color: #6C503B;
         font-size: 30px;
@@ -491,13 +636,18 @@ width: 174px;
         max-width: 446px;
         width: 100%;
     }
-    .about-row{
+
+    .about-row {
         padding: 0px;
     }
-    .mob-col{
-        gap:10px
+
+    .mob-col {
+        gap: 10px
     }
-    .arbi, .enquiry, .number{
+
+    .arbi,
+    .enquiry,
+    .number {
         display: none;
     }
 }

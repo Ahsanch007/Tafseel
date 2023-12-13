@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/css/splide.min.css"
         integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="./assets/styles/style.css">
 
@@ -74,7 +75,7 @@
             <div class="left-box" style="width: 40px; height: 54px;background: #FFFFFFBA;
             "></div>
             <div class="container">
-                <main class="hero-content">
+                <main class="hero-content" data-aos="zoom-in-bottom" data-aos-duration="1000">
                     <h3>
                         Creating timeless spaces designed thoughtfully for your lifestyle
                     </h3>
@@ -94,7 +95,7 @@
         <div class="container">
             <div class="row about-row">
                 <div class="col-md-6 col-12">
-                    <main>
+                    <main data-aos="fade-right" data-aos-duration="1000">
                         <aside class="title">
                             <p>About us</p>
                         </aside>
@@ -111,7 +112,7 @@
                     </main>
                 </div>
                 <div class="col-md-6 col-12">
-                    <div>
+                    <div data-aos="fade-left" data-aos-duration="1000">
                         <img src="./assets/images/Group 1.png" style="max-width: 100%;" alt="">
                     </div>
                 </div>
@@ -125,10 +126,10 @@
     <section class="services-section">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center services-head">
-                <aside class="services-title">
+                <aside class="services-title" data-aos="fade-up" data-aos-duration="1000">
                     <p>OUR SERVICES</p>
                 </aside>
-                <aside class="btn-variant">
+                <aside class="btn-variant" data-aos="fade-down" data-aos-duration="1000">
                     <button>
                         Read More
                     </button>
@@ -137,7 +138,7 @@
             <section class="splide" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                     <ul class="splide__list">
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-aos="fade-down" data-aos-duration="1000">
                             <div class="slide-1">
                                 <img src="./assets/images/IMAGE (4).png" style="max-width: 100%;" alt="">
                                 <div class="img-decription">
@@ -145,7 +146,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-aos="fade-up" data-aos-duration="1000">
                             <div class="slide-1">
                                 <img src="./assets/images/IMAGE (5).png" style="max-width: 100%;" alt="">
                                 <div class="img-decription">
@@ -153,7 +154,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-aos="fade-down" data-aos-duration="1000">
                             <div class="slide-1">
                                 <img src="./assets/images/IMAGE (6).png" style="max-width: 100%;" alt="">
                                 <div class="img-decription">
@@ -161,7 +162,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="splide__slide">
+                        <li class="splide__slide" data-aos="fade-up" data-aos-duration="1000">
                             <div class="slide-1">
                                 <img src="./assets/images/IMAGE (7).png" style="max-width: 100%;" alt="">
                                 <div class="img-decription">
@@ -202,7 +203,7 @@
                     <p>LATEST PROJECTS</p>
                 </aside>
                 <div class="d-flex justify-content-between flex-wrap card-row">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-right" data-aos-duration="2000">
                         <img src="./assets/images/IMAGE (8).png" alt="">
                         <div class="card-content">
                             <h4>
@@ -217,7 +218,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-left" data-aos-duration="2000">
                         <img src="./assets/images/IMAGE (9).png" alt="">
                         <div class="card-content">
                             <h4>
@@ -232,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-up" data-aos-duration="2000">
                         <img src="./assets/images/IMAGE (10).png" alt="">
                         <div class="card-content">
                             <h4>
@@ -247,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duration="3000">
                         <img src="./assets/images/IMAGE (11).png" alt="">
                         <div class="card-content">
                             <h4>
@@ -274,7 +275,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-7 col-12">
-                    <main class="design-journey">
+                    <main class="design-journey" data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <h3>
                             Follow our Design Journey
                         </h3>
@@ -288,15 +290,21 @@
                 </div>
                 <div class="col-md-5 col-12">
                     <div class="d-flex justify-content-between img-row flex-wrap  mob-col">
-                        <img src="./assets/images/image 3.png" alt="">
-                        <img src="./assets/images/image 4.png" alt="">
-                        <img src="./assets/images/image 4.png" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="./assets/images/image 3.png" alt="">
+                        <img data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="./assets/images/image 4.png" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="./assets/images/image 4.png" alt="">
                     </div>
                     <div class="d-flex justify-content-between img-row mt-4 flex-wrap  mob-col">
 
-                        <img src="./assets/images/image 3.png" alt="">
-                        <img src="./assets/images/image 4.png" alt="">
-                        <img src="./assets/images/image 4.png" alt="">
+                        <img data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="./assets/images/image 3.png" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="./assets/images/image 4.png" alt="">
+                        <img data-aos="fade-down" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+                            src="./assets/images/image 4.png" alt="">
                     </div>
 
                 </div>
@@ -307,6 +315,118 @@
 
 
     <!-- journey section code end  -->
+
+    <!-- footer section code start  -->
+
+    <section class="footer-section">
+        <div class="container">
+            <div class="d-flex justify-content-between flex-wrap ">
+                <aside class="footer-inf" data-aos="fade-right" data-aos-duration="1000">
+
+                    <aside class="footer-info">
+                        <div>
+                            <p class="interior-design">
+                                Tafaseel Interiors Designs
+                            </p>
+                            <p class="office">
+                                Office 2303,
+                            </p>
+                            <p class="loca">
+                                Dubai, UAE <br>
+                                Baghdad,Iraq <br>
+                                T:+971 56 1734954
+                            </p>
+                            <div class="email">
+                                <p>E: info@tafseelinterior.com</p>
+                            </div>
+
+                        </div>
+                        <div>
+                            <p class="interior-design">
+                                About
+                            </p>
+                            <p class="office">
+                                Services
+                            </p>
+                            <p class="loca">
+                                Portfolio <br>
+                                Contact
+                            </p>
+
+
+                        </div>
+                    </aside>
+                    <div class="rights">
+                        <p>
+                            © 2023 Tafaseel Interiors Designs. All Rights Reserved.
+                        </p>
+                    </div>
+                </aside>
+                <div class="social-follow" data-aos="fade-up-left" data-aos-duration="1000">
+                    <p class="interior-design">
+                        Follow us on
+                    </p>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>linkedin</li>
+                        <li>youtube</li>
+                    </ul>
+
+
+
+                </div>
+                <div class="get-in-touch" data-aos="zoom-in-left" data-aos-duration="1000">
+                    <div>
+                        <aside>
+
+                            <p class="interior-design">
+                                Get in touch
+                            </p>
+                            <div class="d-flex flex-wrap footer-mob">
+
+                                <p class="touch-decr">
+                                    Get in touch by visiting our office, calling, or sending us an e-mail. You may also
+                                    use
+                                    the
+                                    query form here.
+                                </p>
+                                <div class="footer-btn">
+                                    <button>
+                                        Make an Enquiry
+                                    </button>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside>
+
+                            <p class="interior-design">
+                                Join our team
+                            </p>
+                            <div class="d-flex flex-wrap footer-mob">
+
+                                <p class="touch-decr">
+                                    Be part of a team that creates beautiful, timeless, and livable spaces. Check out
+                                    the career options available for you and send us your CV!
+                                </p>
+                                <div class="footer-btn">
+                                    <button>
+                                        Make an Enquiry
+                                    </button>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section code end  -->
+
+
+
+
 
 
 
@@ -330,6 +450,10 @@
         });
 
         splide.mount();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
