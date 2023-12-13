@@ -31,10 +31,30 @@
                     </div>
                     <div class="menu-list">
                         <ul>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Portfolio</li>
-                            <li>Contact</li>
+                            <li>
+                                <a href="#" class="active" aria-current="page">
+
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    Services
+                                </a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html">
+
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+
+                                    Contact
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="number">
@@ -135,7 +155,7 @@
                     </button>
                 </aside>
             </div>
-            <section class="splide" aria-label="Splide Basic HTML Example">
+            <section class="splide" id="splide3" aria-label="Splide Basic HTML Example">
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide" data-aos="fade-down" data-aos-duration="1000">
@@ -321,7 +341,7 @@
     <section class="footer-section">
         <div class="container">
             <div class="d-flex justify-content-between flex-wrap ">
-                <aside class="footer-inf" data-aos="fade-right" data-aos-duration="1000">
+                <aside class="footer-inf" data-aos="fade-top" data-aos-duration="1000">
 
                     <aside class="footer-info">
                         <div>
@@ -362,7 +382,7 @@
                         </p>
                     </div>
                 </aside>
-                <div class="social-follow" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="social-follow" data-aos="fade-bottom" data-aos-duration="1000">
                     <p class="interior-design">
                         Follow us on
                     </p>
@@ -376,7 +396,7 @@
 
 
                 </div>
-                <div class="get-in-touch" data-aos="zoom-in-left" data-aos-duration="1000">
+                <div class="get-in-touch" data-aos="zoom-up" data-aos-duration="1000">
                     <div>
                         <aside>
 
@@ -455,6 +475,20 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.menu-list ul li a').click(function () {
+                // Remove active class from all items
+                $('.menu-list ul li a').removeClass('active');
+
+                // Add active class to the clicked item
+                $(this).addClass('active');
+            });
+        });
+    </script>
+
 </body>
 
 </html>

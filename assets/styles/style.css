@@ -14,6 +14,17 @@ body {
     align-items: center;
 }
 
+.hero-portfolio {
+    background-image: url('../images/03\ 1\ \(1\).png');
+    background-repeat: no-repeat;
+    height: 395px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .header {
     background: #1F1F1F38;
     padding: 10px 0px;
@@ -33,6 +44,7 @@ body {
     width: 100%;
 }
 
+
 .menu-list ul li {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
@@ -44,6 +56,17 @@ body {
     cursor: pointer;
     transition: .3s;
 
+}
+
+.menu-list ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu-list ul li a.active {
+    color: black;
+    /* Set the desired active color */
 }
 
 .menu-list ul li:hover {
@@ -320,7 +343,7 @@ nav {
 
 }
 
-li.splide__slide {
+#splide3 li.splide__slide {
     margin-right: 20px;
     max-width: 293px;
 }
@@ -561,18 +584,174 @@ li.splide__slide {
     max-width: 304px;
 
 }
-.footer-btn button{
+
+.footer-btn button {
     max-width: 204px;
     width: 100%;
     border: 1px solid #DAC1AB;
     border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 20px;
+
+}
+
+
+/* portfolio page css  */
+
+.portfolio-title {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.carouser-section {
+    padding: 80px 0px;
+    background-color: white;
+}
+
+.portfolio-desc p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+
+}
+
+.portfolio-slider {
+    padding-top: 30px;
+}
+
+.youtube-video {
+    padding: 80px 0px;
+}
+
+.request-section {
+    padding: 80px 0px;
+
+}
+
+.request-tile h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+
+}
+
+.form-card {
+    max-width: 776px;
+    width: 100%;
+    background: #F6F0EA;
+    padding: 15px;
+    border-radius: 20px;
+    padding-right: 60px;
+
+}
+
+.form-content {
+    padding-top: 10px;
+}
+
+.name-input {
+    background: #FBFBFB;
+    border-radius: 20px;
+    max-width: 312px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.name-input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color: #000;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+.name-textarea {
+    background: #FBFBFB;
+    border-radius: 20px;
+
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+}
+
+.submit-btn button {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color: white;
+    background: #DAC1AB;
+    padding: 7px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 10px;
+}
+.infoo-card{
+    max-width: 414px;
+    width: 100%;
+    border: 1px solid #DAC1AB;
+    padding: 30px;
+    border-radius: 20px;
+}
+.info-content{
+    padding: 10px 0px;
+}
+.info-title h3{
+    font-family: 'Lato', sans-serif;
+
+font-size: 20px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+color: #212529;
+}
+.info-content ul {
+    list-style: none;
+    padding: 30px 0px;
+}
+
+.alphabet{
+    width: 18px;
+    height: 18px;
+    background: #F6F0EA;
+    font-family: 'Lato', sans-serif;
+
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+border-radius: 50%;
+
+}
+
+.info-desc p{
+    font-family: 'Lato', sans-serif;
 font-size: 16px;
 font-weight: 400;
-line-height: 16px;
-letter-spacing: 0em;
-text-align: center;
-padding: 10px 20px;
-
+line-height: 26px;
+letter-spacing: 0.800000011920929px;
+color: 
+#212529;
 }
 
 /* media query  */
@@ -589,6 +768,21 @@ padding: 10px 20px;
     .right-box {
         display: none;
 
+    }
+
+    .hero-portfolio {
+        background-size: cover;
+    }
+
+    .form-card {
+        padding-right: 15px;
+    }
+.mob-info{
+    gap: 20px;
+}
+    .name-input {
+        max-width: 100%;
+        margin: 10px 0px;
     }
 
     .card-row {
@@ -616,16 +810,20 @@ padding: 10px 20px;
         text-align: center;
 
     }
-.interior-design{
-    text-align: center;
-}
-.footer-mob{
-    justify-content: center;
-    margin-bottom: 20px;
-}
-.touch-decr{
-    text-align: center;
-}
+
+    .interior-design {
+        text-align: center;
+    }
+
+    .footer-mob {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .touch-decr {
+        text-align: center;
+    }
+
     .desc p {
         color: #6C503B;
         font-size: 30px;
