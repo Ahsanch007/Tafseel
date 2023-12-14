@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
 </head>
 
@@ -92,8 +94,10 @@
             </div>
         </header>
         <div class="d-flex align-items-center side-box">
-            <div class="left-box" style="width: 40px; height: 54px;background: #FFFFFFBA;
-            "></div>
+            <div class="left-box" onclick="changeImage('prev')" style="width: 40px; display:flex;justify-content: center;align-items: center; cursor: pointer; height: 54px;background: #FFFFFFBA;
+            ">
+                <i class="fas fa-chevron-left"></i>
+            </div>
             <div class="container">
                 <main class="hero-content" data-aos="zoom-in-bottom" data-aos-duration="1000">
                     <h3>
@@ -101,11 +105,13 @@
                     </h3>
                 </main>
             </div>
-            <div class="right-box" style="width: 40px; height: 54px;background: #FFFFFFBA;
-            "></div>
+            <div class="right-box" onclick="changeImage('next')" style="width: 40px;display:flex;justify-content: center;align-items: center;cursor: pointer; height: 54px;background: #FFFFFFBA;
+            ">
+                <i class="fas fa-chevron-right"></i>
+            </div>
         </div>
         <div class="arrow-down">
-            <img src="./assets/images/Group 1 (2).png" alt="">
+            <a href="" class="position-absolute homeShape"></a>
         </div>
 
     </section>
@@ -458,6 +464,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let currentKeyframe = 0; // Current keyframe of the animation
+
+        function changeImage(direction) {
+            const totalKeyframes = 5; // Number of keyframes in the animation
+
+            if (direction === 'prev') {
+                currentKeyframe = (currentKeyframe - 1 + totalKeyframes) % totalKeyframes;
+            } else {
+                currentKeyframe = (currentKeyframe + 1) % totalKeyframes;
+            }
+
+            const heroSection = document.querySelector('.hero-section');
+            heroSection.style.animation = `carouselAnimation 10s infinite`;
+            heroSection.style.animationPlayState = 'running';
+            heroSection.style.animationDelay = `-${(currentKeyframe / totalKeyframes) * 10}s`;
+        }
+    </script>
     <script>
         var splide = new Splide('.splide', {
             type: 'loop',
