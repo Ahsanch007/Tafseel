@@ -73,25 +73,34 @@
 
                 </nav>
 
-                <!-- <div class="menu-content">
+                <div class="menu-content">
                     <ul>
                         <li>
-                            Home
+                            <a href="#" class="active" aria-current="page">
+
+                                About
+                            </a>
                         </li>
                         <li>
-                            About
+                            <a href="#">
+
+                                Services
+                            </a>
                         </li>
                         <li>
-                            Services
+                            <a href="portfolio.html">
+
+                                Portfolio
+                            </a>
                         </li>
                         <li>
-                            Our Work
-                        </li>
-                        <li>
-                            Contact
+                            <a href="#">
+
+                                Contact
+                            </a>
                         </li>
                     </ul>
-                </div> -->
+                </div>
             </div>
         </header>
         <div class="">
@@ -439,6 +448,13 @@
         AOS.init();
     </script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#menuToggle').change(function () {
+                $('.menu-content').toggle();
+            });
+        });
+    </script>
 
     <script>
         $(document).ready(function () {
