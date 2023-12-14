@@ -12,8 +12,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+.arrow-down {
+    position: absolute;
+    bottom: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .hero-portfolio {
     background-image: url('../images/03\ 1\ \(1\).png');
     background-repeat: no-repeat;
@@ -596,6 +603,8 @@ nav {
     letter-spacing: 0em;
     text-align: center;
     padding: 10px 20px;
+    background-color: #F5F0EA;
+    color: #76787B;
 
 }
 
