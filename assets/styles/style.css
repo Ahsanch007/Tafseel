@@ -593,8 +593,7 @@ nav {
 }
 
 .footer-btn button {
-    max-width: 204px;
-    width: 100%;
+width: 204px;
     border: 1px solid #DAC1AB;
     border-radius: 10px;
     font-size: 16px;
@@ -802,7 +801,9 @@ color:
     .menu {
         display: inline-block;
     }
-
+    .portfolio-desc p{
+        font-size: 18px;
+    }
     .menu-list {
         display: none;
     }
