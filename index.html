@@ -532,8 +532,8 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#menuToggle').change(function () {
-                $('.menu-content').toggle();
+            $('#menuToggle').click(function () {
+                $('.menu-content').toggleClass('show-menu');
             });
         });
     </script>
