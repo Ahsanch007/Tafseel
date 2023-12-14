@@ -111,7 +111,7 @@
             </div>
         </div>
         <div class="arrow-down">
-            <a href="" class="position-absolute homeShape"></a>
+            <a href="#about" class="position-absolute homeShape"></a>
         </div>
 
     </section>
@@ -120,7 +120,7 @@
 
     <!-- about section code start  -->
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="row about-row">
                 <div class="col-md-6 col-12">
@@ -483,15 +483,32 @@
         }
     </script>
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const arrowDown = document.querySelector('.arrow-down a');
+
+            arrowDown.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
+            });
+        });
+    </script>
+    <script>
         var splide = new Splide('.splide', {
             type: 'loop',
-            perPage: 1, // Adjust the number of slides per page for mobile
+            perPage: 1,
             perMove: 1,
             arrows: false,
             gap: 20,
             breakpoints: {
                 576: {
-                    perPage: 2, // Adjust the number of slides per page for mobile
+                    perPage: 2,
                 }
             }
         });
