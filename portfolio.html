@@ -15,8 +15,14 @@
         integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="https://polishedinteriors.org/wp-content/themes/polishedinteriors/css/animate.css">
+    <link rel="stylesheet"
+        href="https://polishedinteriors.org/wp-content/themes/polishedinteriors/css/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://polishedinteriors.org/wp-content/themes/polishedinteriors/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 
 </head>
 
@@ -124,7 +130,7 @@
 
     <!-- 2nd section code start -->
 
-    <div class="" style="background-color: white !important;">
+    <!-- <div class="" style="background-color: white !important;">
 
         <section class="splide" id="splide1" aria-label="Splide Basic HTML Example">
             <div class="splide__track">
@@ -159,7 +165,57 @@
             </div>
         </section>
 
-    </div>
+    </div> -->
+    <section class="comSec portfolio_single_wrp comProps">
+        <div class=" portfolio_single_01">
+            <div class="comWidth01 portfolio_single_01AWrp">
+                <div class="d-flex">
+                    <div class="portfolio_single_01A">
+                        <div class="portfolio_single_01A01">
+                            <h3 class="pihead01">Khalifa City</h3>
+                            <h4 class="portfolio_single_01Sub">A Calming Transformation</h4>
+
+                            <p>From generic to fantastic!</p>
+
+
+
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="owl_portfolio_single_wrp">
+                <div class="owl-carousel owl-theme owl_portfolio_single">
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-04.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-05.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-06.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-07.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-08.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-01.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-02.jpg">
+                    </div>
+                    <div class="owl_portfolio_single01">
+                        <img src="https://polishedinteriors.org/wp-content/uploads/2022/04/horizontal-slide-03.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- 2nd section code end -->
 
@@ -420,14 +476,102 @@
     </section>
     <!-- footer section code end  -->
     <!-- Bootstrap JS (optional, if you need it) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js"
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://polishedinteriors.org/wp-content/themes/polishedinteriors/js/owl.carousel.min.js"></script>
+    <!-- <script>
+        $(".owl_portfolio_single").owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 0,
+            autoWidth: false,
+            autoplay: true,
+            dots: false,
+            nav: true,
+            navText: ['<i class="icon-chev_left_02"></i>', '<i class="icon-chev_right_02"></i>'],
+
+        });
+    </script> -->
 
     <script>
+        $(document).ready(function () {
+            console.log("L " + $('.portfolio_single_01AWrp').css("margin-left"));
+            console.log("L " + $('.portfolio_single_01AWrp').width());
+            console.log("L " + $('.portfolio_single_01A').width());
+
+
+            $('.portfolio_single_01AWrp').attr("a", parseInt($('.portfolio_single_01AWrp').css("margin-left"), 10) + $('.portfolio_single_01A').width());
+            $('.owl_portfolio_single_wrp').css("left", parseInt($('.portfolio_single_01AWrp').css("margin-left"), 10) + $('.portfolio_single_01A').width());
+
+            window.addEventListener("resize", function (event) {
+                $('.portfolio_single_01AWrp').attr("a", parseInt($('.portfolio_single_01AWrp').css("margin-left"), 10) + $('.portfolio_single_01A').width());
+                $('.owl_portfolio_single_wrp').css("left", parseInt($('.portfolio_single_01AWrp').css("margin-left"), 10) + $('.portfolio_single_01A').width());
+            });
+
+
+            $(".owl_portfolio_single").owlCarousel({
+                autoplayHoverPause: false,
+                transitionStyle: "fade",
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                smartSpeed: 5000,
+                autoplayTimeout: 6000,
+                items: 3,
+                loop: true,
+                margin: 24,
+                autoWidth: true,
+                autoplay: true,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1,
+                        margin: 5,
+                    },
+                    600: {
+                        items: 2,
+                        margin: 10,
+                    },
+                    1000: {
+                        items: 2,
+                        margin: 16,
+                    },
+                    1200: {
+                        items: 2,
+                        margin: 20,
+                    },
+                    1400: {
+                        items: 3,
+                        margin: 24,
+                    }
+                }
+
+            });
+
+            $(".owl_portfolio_single_img").owlCarousel({
+                autoplayHoverPause: true,
+                items: 1,
+                loop: true,
+                margin: 0,
+                autoWidth: false,
+                autoplay: true,
+                dots: false,
+                nav: true,
+                navText: ['<i class="icon-chev_left_02"></i>', '<i class="icon-chev_right_02"></i>'],
+
+            });
+
+        });
+
+    </script>
+
+
+
+    <!-- <script>
         var splide1 = new Splide('#splide1', {
             type: 'loop',
             perPage: 3, // Adjust the number of slides per page for mobile
@@ -446,13 +590,12 @@
     <script>
         var splide = new Splide('#splide2');
         splide.mount();
-    </script>
+    </script> -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
     <script>
@@ -477,6 +620,7 @@
 
         mobile_nav.addEventListener("click", () => toggleNavbar());
     </script>
+
 </body>
 
 </html>
