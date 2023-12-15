@@ -2,21 +2,54 @@ body {
     font-family: 'Playfair Display', serif !important;
     font-family: 'Lato', sans-serif;
 }
-
+.mob-her{
+    z-index: 99;
+}
 /* header section css  */
 .hero-section {
     background-repeat: no-repeat;
-    height: 100vh;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    animation: carouselAnimation 10s infinite; 
-    transition: background-image 1s ease-in-out; 
+    position: relative; 
 }
+.owl-carousel.owlHome .owl-nav button.owl-next, .owl-carousel.owlHome .owl-nav button.owl-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 59px;
+    height: 61px;
+    margin: 0px;
+    background-color: #ffffff;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.owl-carousel.owlHome .owl-nav button.owl-prev {
+    left: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.owl-carousel.owlHome .owl-nav button.owl-next {
+    right: 0px;
+    align-items: center;
+    justify-content: center;
 
-@keyframes carouselAnimation {
+}
+ @keyframes carouselAnimation {
     0% {
         background-image: url('../images/5.jpg');
     }
@@ -32,9 +65,11 @@ body {
     100% {
         background-image: url('../images/8.jpg');
     }
+} 
+
+.owl-carousel img{
+    width: 100%;
 }
-
-
 .arrow-down {
     position: absolute;
     bottom: 39px;
@@ -842,7 +877,25 @@ color:
         display: none;
 
     }
-
+    
+    .owl-carousel.owlHome .owl-nav button.owl-prev {
+        left: 0px;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+    }
+    .owl-carousel.owlHome .owl-nav button.owl-next {
+        right: 0px;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+    
+    }
+    .owl-carousel .owl-item img{
+        height: 100vh;
+    }
     nav {
         padding: 0px;
     }
@@ -1006,7 +1059,7 @@ color:
       position: absolute;
       top: 0;
       left: 0;
-  
+  z-index: 99;
       display: flex;
       justify-content: center;
       align-items: center;

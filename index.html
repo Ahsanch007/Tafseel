@@ -15,7 +15,11 @@
         integrity="sha512-KhFXpe+VJEu5HYbJyKQs9VvwGB+jQepqb4ZnlhUF/jQGxYJcjdxOTf6cr445hOc791FFLs18DKVpfrQnONOB1g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="https://polishedinteriors.org/wp-content/themes/polishedinteriors/css/animate.css">
+    <link rel="stylesheet"
+        href="https://polishedinteriors.org/wp-content/themes/polishedinteriors/css/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://polishedinteriors.org/wp-content/themes/polishedinteriors/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
@@ -25,13 +29,12 @@
 <body>
     <!-- main section code start  -->
     <section class="hero-section">
-        <!-- <div class="owl-carousel">
+        <div class=" owl-carousel owl-theme owlHome">
             <img src="./assets/images/5.jpg" alt="">
             <img src="./assets/images/1.jpg" alt="">
             <img src="./assets/images/7.jpg" alt="">
             <img src="./assets/images/8.jpg" alt="">
-            <img src="./assets/images/03\ 1.png" alt="">
-        </div> -->
+        </div>
         <header class="header">
             <div class="container-fluid ">
                 <nav class="d-flex align-items-center justify-content-between">
@@ -112,12 +115,12 @@
                 </div>
             </div>
         </header>
-        <div class="d-flex align-items-center side-box">
+        <div class="d-flex align-items-center side-box position-absolute">
             <div class="left-box" onclick="changeImage('prev')" style="width: 40px; display:flex;justify-content: center;align-items: center; cursor: pointer; height: 54px;background: #FFFFFFBA;
             ">
                 <i class="fas fa-chevron-left"></i>
             </div>
-            <div class="container">
+            <div class="container mob-her">
                 <main class="hero-content" data-aos="zoom-in-bottom" data-aos-duration="1000">
                     <h3>
                         Creating timeless spaces designed thoughtfully for your lifestyle
@@ -484,8 +487,8 @@
         integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script>
+    <script src="https://polishedinteriors.org/wp-content/themes/polishedinteriors/js/owl.carousel.min.js"></script>
+    <!-- <script>
         let currentKeyframe = 0; // Current keyframe of the animation
 
         function changeImage(direction) {
@@ -502,8 +505,35 @@
             heroSection.style.animationPlayState = 'running';
             heroSection.style.animationDelay = `-${(currentKeyframe / totalKeyframes) * 10}s`;
         }
-    </script>
+    </script> -->
+    <script>
+        $(document).ready(function () {
 
+
+            $(".owlHome").owlCarousel({
+                transitionStyle: "fade",
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                smartSpeed: 5000,
+                autoplayTimeout: 6000,
+                items: 1,
+                loop: true,
+                margin: 0,
+                autoWidth: false,
+                autoplay: true,
+                dots: false,
+                nav: true,
+                navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+            });
+
+
+
+
+
+
+        });
+
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const arrowDown = document.querySelector('.arrow-down a');
