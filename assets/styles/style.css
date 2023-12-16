@@ -171,6 +171,8 @@ body {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     min-width: auto;
+    cursor: pointer;
+
 }
 .enquiry{
     display: flex;
@@ -186,6 +188,7 @@ body {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     min-width: auto;
+    cursor: pointer;
 }
 .enquiry:hover{
     color: #76787b;
