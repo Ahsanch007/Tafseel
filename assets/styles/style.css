@@ -400,6 +400,8 @@ nav {
     clip-path: inset(0);
     --_p: calc(-1*var(--s));
     --_s: 0s;
+    --c:black;
+    
 }
 
 .menu:checked:before {
