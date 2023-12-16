@@ -3,7 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 .mob-her{
-    z-index: 99;
+    z-index: 1;
 }
 /* header section css  */
 .hero-section {
@@ -211,7 +211,7 @@ body {
 }
 
 .number p:hover {
-    color: #F5F0EA;
+    color: #76787b;
 
 }
 
@@ -233,7 +233,7 @@ body {
 }
 
 .enquiry p:hover {
-    color: #F5F0EA;
+    color: #76787b;
 
 }
 
