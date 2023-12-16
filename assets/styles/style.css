@@ -176,7 +176,7 @@ body {
 
 }
 .eachHome{
-    height: 550px;
+    height: 100vh;
 }
 .enquiry{
     display: flex;
