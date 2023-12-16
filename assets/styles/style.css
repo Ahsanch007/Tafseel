@@ -175,7 +175,7 @@ body {
     cursor: pointer;
 
 }
-.eachHome{
+.eachHome img{
     height: 100vh;
 }
 .enquiry{
@@ -1039,7 +1039,16 @@ color:
     
     }
     .owl-carousel .owl-item img{
-        height: 100vh;
+        height: 250px;
+    }
+    .arrow-down{
+        display: none;
+    }
+    .mob-her{
+        display: none;
+    }
+    .about-section{
+        padding: 60px 0px;
     }
     nav {
         padding: 0px;
@@ -1092,7 +1101,10 @@ color:
         text-align: center;
 
     }
-
+    .eachHome img{
+        height: 250px;
+        width: 100%;
+    }
     .interior-design {
         text-align: center;
     }
