@@ -174,6 +174,9 @@ body {
     cursor: pointer;
 
 }
+.eachHome{
+    height: 550px;
+}
 .enquiry{
     display: flex;
     align-items: center;
@@ -274,6 +277,10 @@ body {
     letter-spacing: 0em;
     text-align: center;
 
+}
+.owl-theme .owl-nav [class*=owl-]:hover
+{
+    color: black;
 }
 .owl_portfolio_single01 {
     width: 400px;
@@ -979,6 +986,7 @@ color:
         display: none;
 
     }
+ 
     .portfolio_single_01 {
         flex-direction: column;
     }
